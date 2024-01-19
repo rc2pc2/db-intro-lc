@@ -1,0 +1,23 @@
+nome tabella: used_cars
+
+id          -   intero - MEDIUMINT - UNSIGNED -  NOT NULL, UNIQUE, AUTOINCREMENT - PRIMARY KEY
+brand       -   stringa - VARCHAR(25) - NOT NULL
+model       -  stringa  - VARCHAR(50) - NOT NULL
+production_year -  date - YEAR - NOT NULL
+registration_year - date - DATE - NULL
+fuel_type   -   stringa - VARCHAR(30) - NOT NULL
+transmission_type - stringa - VARCHAR(30) - NULL
+cc - integer - SMALLINT - UNSIGNED - NULL
+horsepower  - integer - SMALLINT - UNSIGNED - NOT NULL
+km          - integer - MEDIUMINT - UNSIGNED - NULL
+status      - string  - VARCHAR(25) - NULL
+price       - float - DECIMAL(9,2) - NULL
+description - string - TEXT - NULL
+no_accidents - integer - TINYINT - UNSIGNED - NULL
+doors       - integer - TINYINT - UNSIGNED - NOT NULL - DEFAULT(5)
+seats       - integer - TINYINT - UNSIGNED - NOT NULL - DEFAULT(4)
+color       - string - VARCHAR(30) - NULL
+vin         - string - VARCHAR(20) - UNIQUE - NOT NULL -
+no_owners   - integer - TINYINT - UNSIGNED - NOT NULL - DEFAULT(1)
+is_new      - boolean - BOOLEAN - NOT NULL
+is_available- boolean - BOOLEAN - NOT NULL
